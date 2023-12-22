@@ -1,0 +1,74 @@
+@import '/css/reset.css';
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+:root {
+    --colorMain: #070707;
+    --font-main-md: 'Gilroy-Medium', sans-serif;
+    --font-main-bd: 'Gilroy-Bold', sans-serif;
+}
+
+body {
+    background: #F6F6F6;
+}
+
+.portfolio {
+    max-width: 1445px;
+    margin: auto;
+}
+
+.portfolio__title {
+    color: var(--colorMain);
+    text-align: center;
+    font-family: var(--font-main-bd);
+    font-size: 34px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 115px 0 44.94px 0;
+}
+
+.portfolio__img {
+    width: 936.24px;
+    height: 510px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: auto;
+}
+
+.portfolio__link {
+    width: 276.146px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.portfolio__link-text {
+    color: var(--colorMain);
+    font-family: var(--font-main-md);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.size {
+    width: 202.842px;
+}
+
+@media screen and (max-width: 430px) {
+    .portfolio__img {
+        width: 316px;
+        height: 171px;
+    }
+
+    img {
+        width: 316px;
+        height: 171px;
+    }
+
+    .portfolio__title {
+        padding: 81px 0 64.94px 0;
+    }
+
+    .portfolio__link{
+        margin: 35px 0 77.97px 0 auto;
+    }
+}
